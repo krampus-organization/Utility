@@ -40,4 +40,28 @@ function Math:ApproxEqualVector(vec1, vec2, epsilon)
     return self:ApproxEqual(vec1.X, vec2.X, epsilon) and self:ApproxEqual(vec1.Y, vec2.Y, epsilon) and self:ApproxEqual(vec1.Z, vec2.Z, epsilon) 
 end
 
+function Math:RotateVector(Vec, Rotation)
+    local Cosine = math.cos(math.rad(Rotation))
+    local Sine = math.sin(math.rad(Rotation))
+    return Vector2.new(Cosine * Vec.X - Sine * Vec.Y, Sine * Vec.X + Cosine * Vec.Y)
+end
+
+function Math:ToVector(Vec)
+    return Vector2.new(Vec.X, Vec.Y)
+end
+
+function Math:ToRot(Angle)
+    return Vector2.new(math.sin(math.rad(Angle)), math.cos(math.rad(Angle)))
+end
+
+function Math:Round(Value)
+    if typeof(Value) == "number" then
+        return math.floor(Value)
+    elseif typeof(Value) == "Vector2" then
+        return Vector2.new(self:Round(Value.X), self:Round(Value.Y))
+    elseif typeof(Value) == "Vector3" then
+        return Vector3.new(self:Round(Value.X), self:Round(Value.Y), self:Round(Value.Z))
+    end
+end
+
 return Math
