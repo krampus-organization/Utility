@@ -13,6 +13,12 @@ function Utility:Connection(Signal, Callback)
     return Connection
 end
 
+function Utility:Tween(Object, Time, Data)
+    local Tween = game:GetService("TweenService"):Create(Object, TweenInfo.new(Time, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), Data)
+    Tween:Play()
+    return Tween
+end
+
 function Utility:SplitString(String, Separator)
     local Result = {}
     for Part in string.gmatch(String, "([^" .. Separator .. "]+)") do
