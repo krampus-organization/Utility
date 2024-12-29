@@ -1,0 +1,40 @@
+local Hitsounds = {}
+
+Hitsounds = {
+    Neverlose = "rbxassetid://8726881116",
+    Gamesense = "rbxassetid://4817809188",
+    One = "rbxassetid://7380502345",
+    Bell = "rbxassetid://6534947240",
+    Rust = "rbxassetid://1255040462",
+    TF2 = "rbxassetid://2868331684",
+    Slime = "rbxassetid://6916371803",
+    ["Among Us"] = "rbxassetid://5700183626",
+    Minecraft = "rbxassetid://4018616850",
+    ["CS:GO"] = "rbxassetid://6937353691",
+    Saber = "rbxassetid://8415678813",
+    Baimware = "rbxassetid://3124331820",
+    Osu = "rbxassetid://7149255551",
+    ["TF2 Critical"] = "rbxassetid://296102734",
+    Bat = "rbxassetid://3333907347",
+    ["Call of Duty"] = "rbxassetid://5952120301",
+    Bubble = "rbxassetid://6534947588",
+    Pick = "rbxassetid://1347140027",
+    Pop = "rbxassetid://198598793",
+    Bruh = "rbxassetid://4275842574",
+    Bamboo = "rbxassetid://3769434519",
+    Crowbar = "rbxassetid://546410481",
+    Weeb = "rbxassetid://6442965016",
+    Beep = "rbxassetid://8177256015",
+    Bambi = "rbxassetid://8437203821",
+    Stone = "rbxassetid://3581383408",
+    ["Old Fatality"] = "rbxassetid://6607142036",
+    Click = "rbxassetid://8053704437",
+    Ding = "rbxassetid://7149516994",
+    Snow = "rbxassetid://6455527632",
+    Laser = "rbxassetid://7837461331",
+    Mario = "rbxassetid://2815207981",
+    Steve = "rbxassetid://4965083997",
+    Snowdrake = "rbxassetid://7834724809"
+}
+
+return Hitsounds
