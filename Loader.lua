@@ -1,6 +1,6 @@
 local Utility = {}
 
-local Repository = "https://github.com/krampus-organization/Utility/raw/refs/heads/main/Modules/"
+local Repository = "https://raw.githubusercontent.com/krampus-organization/Utility/refs/heads/main/Modules/"
 
 local Modules = {
     "Character",
