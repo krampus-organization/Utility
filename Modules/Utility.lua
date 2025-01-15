@@ -14,7 +14,7 @@ function Utility:Connection(Signal, Callback)
 end
 
 function Utility:Tween(Object, Time, Data)
-    local Tween = game:GetService("TweenService"):Create(Object, TweenInfo.new(Time, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), Data)
+    local Tween = cloneref(game:GetService("TweenService")):Create(Object, TweenInfo.new(Time, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), Data)
     Tween:Play()
     return Tween
 end
@@ -41,7 +41,7 @@ function Utility:PlayHitSound(SoundId, Volume)
         Parent = cloneref(game:GetService("Workspace"))
     })
     Sound:Play()
-    Sound.Ended:Connect(function()
+    self:Connection(Sound.Ended, function()
         Sound:Destroy()
     end)
 end
